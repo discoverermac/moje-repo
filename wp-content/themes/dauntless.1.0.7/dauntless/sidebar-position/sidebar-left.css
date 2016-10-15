@@ -1,0 +1,15 @@
+/*
+    Switching the sidebar to the left side of the content.
+    Created on : Dec 8, 2015, 10:19:14 AM
+    Author     : Yavor
+*/
+
+#primary {
+    float: right;
+}
+
+#secondary {
+    float: left;
+}
+
+

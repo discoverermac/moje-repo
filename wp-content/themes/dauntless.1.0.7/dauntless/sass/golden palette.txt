@@ -1,0 +1,15 @@
+Color 	HTML / CSS
+Color Name 	Hex Code
+#RRGGBB 	Decimal Code
+(R,G,B)
+  	lightgoldenrodyellow 	#FAFAD2 	rgb(250,250,210)
+  	palegoldenrod 	#EEE8AA 	rgb(238,232,170)
+  	khaki 	#F0E68C 	rgb(240,230,140)
+  	goldenrod 	#DAA520 	rgb(218,165,32)
+  	gold 	#FFD700 	rgb(255,215,0)
+  	orange 	#FFA500 	rgb(255,165,0)
+  	darkorange 	#FF8C00 	rgb(255,140,0)
+  	peru 	#CD853F 	rgb(205,133,63)
+  	chocolate 	#D2691E 	rgb(210,105,30)
+  	saddlebrown 	#8B4513 	rgb(139,69,19)
+  	sienna 	#A0522D 	rgb(160,82,45)

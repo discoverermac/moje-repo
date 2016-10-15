@@ -1,0 +1,24 @@
+/*
+The 404, search and archive templates
+*/
+
+
+.error404, .archive, .search {
+    #primary {
+        padding: 10px;
+            form input {
+        padding: 0 5px;
+        box-sizing: border-box;
+        }
+        form label input {
+            width: 50%;
+        }
+         form input:focus {
+            background: #EEE8AA; 
+        }
+
+    } // end of #primary
+
+} //end of error404
+
+

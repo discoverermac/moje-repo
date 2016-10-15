@@ -1,0 +1,45 @@
+/*
+The single post template
+*/
+$number-of-columns: 2;
+
+.single {
+    #primary {
+        #main {
+            article {
+                @media screen and (min-width: 60rem) {
+                    -webkit-column-count: $number-of-columns; /* Chrome, Safari, Opera */
+                    -moz-column-count: $number-of-columns; /* Firefox */
+                    column-count: $number-of-columns;
+                }
+                padding: $primary-article-padding; //defined in _index.scss
+                .entry-header, .entry-content, .entry-footer {
+                    max-width: 100%; 
+                    display: block;
+                } // end of .entry-header
+            } // end of article 
+            /*Single post navigation styles*/
+            nav.navigation {
+               display: block;
+               clear: both;
+               overflow: hidden;
+               padding: $primary-article-padding; //defined in _index.scss
+                   .post-previous {
+                       float: left;
+                       width: 49.5%;
+                       text-align: center;
+                   }
+                   .post-next {
+                       float: right;
+                       width: 49.5%;
+                       text-align: center;
+                   }
+            }
+        } //end of #main
+    } // end of #primary
+} // end of .single
+
+
+ 
+
+

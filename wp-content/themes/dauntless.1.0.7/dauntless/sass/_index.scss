@@ -1,0 +1,123 @@
+/*    
+Index template styles
+*/
+
+$primary-background: red;
+$primary-color: #ccc;
+$primary-hovor-color: #DAA520;
+$primary-article-padding: 100px;
+
+#primary {
+    background: $primary-background;
+    color: $primary-color;
+    a {
+        color: $primary-color;
+    }
+    a:hover {
+        color: $primary-hovor-color;
+    }
+    #main {
+        article {
+            padding: $primary-article-padding;
+            .entry-header, .entry-content, .entry-footer {
+                max-width: 500px; //max-width of  small-thumb in functions.php
+                display: block;
+                margin: 0 auto ;
+            }
+            .entry-content {
+                margin-top: 10px;
+            }
+            .entry-title {
+                margin:  0;
+            }
+            .entry-header h2.entry-title  {
+                margin:  10px 0;
+            }
+            span.posted-on, span.byline{
+                display: inline-block;
+                width: auto;
+                height: 35px;
+                padding: 6px;
+                margin-right: 10px;
+                background: rgba(255, 255, 255, 0.05);
+            }
+            span.cat-links, span.tags-links{
+                display: inline-block;
+                height: 35px;
+                padding: 6px;
+                margin-right: 10px;
+                background: rgba(255, 255, 255, 0.05);
+            }
+            .edit-link {
+                display: block;
+                margin-top: 10px;
+            }
+            .continue-reading a {
+                font-size: 1.4rem;
+            }
+        }
+    } //end of main
+
+} //end of primary
+
+#secondary {
+    padding: $primary-article-padding;
+    overflow: hidden;
+    .recentcomments {
+        font-size: 1.6rem !important;
+    }
+    ul {
+        padding-left: 0;
+    }
+    a {
+        color: $primary-color;
+        abbr {
+            color: $primary-color;
+        }
+    }
+    a:hover {
+        color: $primary-hovor-color;
+    }
+    .widget-title {
+        line-height: 2rem;
+        font-weight: normal;
+    }
+    
+    form input {
+        padding: 0 5px;
+        box-sizing: border-box;
+        font-size: 1.4rem;
+    }
+     form input:focus {
+        background: #EEE8AA; 
+    }
+
+    /* calendar widget */
+    #calendar_wrap {
+            #wp-calendar {
+            width: 100%; 
+            caption {
+                text-align: right; color: #0000; font-size:12px; margin-top: 10px; margin-bottom: 15px; 
+            }
+                 thead { font-size: 10px; }
+            thead th { padding-bottom: 10px; }
+            tbody { color: #aaa; }
+            tbody td { background: #f5f5f5; border: 1px solid #fff; text-align: center; padding:8px;}
+            tbody td:hover { background: #fff; }
+            tbody .pad {background: #f5f5f5;}
+            tfoot #next { font-size: 10px; text-transform: uppercase; text-align: right; }
+            tfoot #prev { font-size: 10px; text-transform: uppercase; padding-top: 10px; }
+        } //end of #wp-calendar
+    } //end of #calendar_wrap
+    
+    /*RSS*/
+    .rssSummary {
+        font-size: 1.5rem;
+    }
+    cite {
+            font-size: 1rem;
+        }
+        
+} // end of #secondary
+
+
