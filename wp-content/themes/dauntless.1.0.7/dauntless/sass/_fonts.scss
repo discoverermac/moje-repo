@@ -1,0 +1,78 @@
+/* FONT STYLES */
+
+$font-headings: 'Nunito', sans-serif;
+$font-subheadings: 'Nunito', sans-serif;
+$font-body: 'Lora', sans-serif;
+$h1-font-size: 3.2rem;
+$h2-font-size: 3.0rem;
+$h3-font-size: 2.8rem;
+$h4-font-size: 2.6rem;
+$h5-font-size: 2.4rem;
+$h6-font-size: 2rem;
+$p-font-size: 1.7rem;
+$ul-li-a-size: 1.6rem;
+$span-font-size: 1.5rem;
+$body-color: #ccc;
+$headings-color: #ccc;
+
+/*The font size of Foundation is set to 100%. This is overwritten here with a font size of 62.5% to more easily calculate pixels. 
+Thus 16px will be equal to 1.6 rem*/
+html { font-size: 62.5%; } 
+
+body {
+  font-family: $font-body;
+  color: $body-color;
+ 
+  h1, h2, h3, h4, h5, h6,
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+      font-family: $font-headings;	
+      color: $headings-color;
+      font-weight: normal;
+  }
+  h1, h1 a {
+      font-size: $h1-font-size;
+  }
+  h2, h2 a {
+      font-size: $h2-font-size;
+      line-height: $h2-font-size;
+  }
+  h3, h3 a {
+      font-size: $h3-font-size;
+  }
+  h4, h4 a {
+      font-size: $h4-font-size;
+  }
+  h5, h5 a {
+      font-size: $h5-font-size;
+  }
+  h6, h6 a {
+      font-size: $h6-font-size;
+  }
+  p {
+      font-size: $p-font-size;
+  }
+   table {
+      font-size: $p-font-size;
+  }
+  ul>li>a {
+      font-size: $ul-li-a-size;
+  }
+  span, input {
+      font-size: $span-font-size;
+  }
+  a {
+      font-size: $p-font-size;
+  }
+  .site-info {
+      font-size: $span-font-size;
+  }     
+
+   
+ } //end body
+
+ 
+
+
+
+
+

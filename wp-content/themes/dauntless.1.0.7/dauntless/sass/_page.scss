@@ -1,0 +1,63 @@
+/*    
+# Single page template styles
+*/
+
+$page-background: #202020;
+$page-color: #ccc;
+$page-hovor-color: #DAA520;
+$page-article-padding: 10px;
+
+#page {
+#primary {
+    background: $page-background;
+    color: $page-color;
+    a {
+        color: $page-color;
+    }
+    a:hover {
+        color: $page-hovor-color;
+    }
+    #main {
+        article {
+            padding: $page-article-padding;
+            .entry-header, .entry-content, .entry-footer {
+                max-width: 100%; //max-width of small-thumb in functions.php
+                display: block;
+                margin: 0 auto ;
+            }
+            .entry-content {
+                margin-top: 10px;
+            }
+            .edit-link {
+                display: block;
+                margin-top: 10px;
+            }
+        }
+    } //end of main
+
+} //end of page
+
+#secondary {
+    padding: $page-article-padding;
+    overflow: hidden;
+    ul {
+        padding-left: 0;
+    }
+    li {
+        font-size: 1.6rem;
+    }
+    a {
+        color: $page-color;
+        abbr {
+            color: $page-color;
+        }
+    }
+    a:hover {
+        color: $page-hovor-color;
+    }
+        
+} // end of #secondary
+
+} //end of #page
+
+

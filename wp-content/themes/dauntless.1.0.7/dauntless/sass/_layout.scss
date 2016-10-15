@@ -1,0 +1,110 @@
+/* 
+    Created on : Nov 23, 2015, 10:22:57 AM
+    Author     : Yavor
+*/
+
+$row-width:  100%;
+$column-padding: 0;
+$content-max-width: 100%;
+$links-color: #000;
+$links-text-decoration: none;
+$list-style-type: none;
+$body-links-hover-color: #DAA520;
+$button-height: 35px;
+$button-width: 160px;
+$button-color: black;
+$button-hover-color: black;
+
+
+
+body {
+    background: url("img/stressed.png");
+    .row {
+        max-width:  $row-width;
+    }
+    .row .row{
+        margin: 0;
+    }
+    .column, .columns {
+        padding: $column-padding;
+    }
+    #content {
+        display: block;     
+        margin: 0 auto;
+        max-width: $content-max-width;
+    }
+    a {
+        color: $links-color;
+        text-decoration: none;
+    }
+    p a {
+        text-decoration: $links-text-decoration;
+    }
+    p.form-submit input {
+        font-size: 1.4rem;
+    }
+    li {
+        list-style-type: $list-style-type;
+    }
+    a:hover {
+        color: $body-links-hover-color; 
+        text-decoration: $links-text-decoration;
+    }
+    .index-thumb, .single-post-thumbnail {
+        text-align:  center;
+    }
+    .button {
+        display: block;
+        width: $button-width;
+        height: $button-height;
+        background: black;
+        margin-top: 10px;
+        padding: 0; 
+    }
+   .button:hover {
+        background: $body-links-hover-color;
+        font-weight: 700;
+    }
+    .button a {
+        display: block;
+        height: $button-height;
+        line-height: $button-height;
+    }
+    .button a:hover, input:hover {
+        color: $button-hover-color !important;
+    }
+    input[type="search"] {
+        height: $button-height;
+        width: 100%;
+        padding: 0;
+    }
+    select {
+        height: $button-height;
+        margin: 10px auto;
+        font-size: 15px;
+        color: black;
+    }
+    
+    /*The class "sticky" is needed by the Theme Check plugin*/
+    .sticky {
+            display: block;
+    }
+    
+    figure {
+        margin: 0;
+    }
+    
+    @media screen and (max-width: 40em) {
+        .button, p a.button {
+            margin: 1rem auto;
+        }
+        h1.site-title, h1.entry-title, .site-title-holder, h2.section-title, h2, h3.services-title, p {
+            text-align: center;
+        }
+        .entry-meta, .entry-footer {
+            text-align: center;
+        }
+    }
+
+} // end of body
+

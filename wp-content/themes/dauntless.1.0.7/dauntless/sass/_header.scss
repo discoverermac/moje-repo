@@ -1,0 +1,67 @@
+$header-width: 100%;
+$header-min-height: 300px;
+$header-background-color: hsl(0, 4%, 9%);
+$site-title-size: 4.4rem;
+$site-title-size-mobile: 3.6rem;
+$site-title-opacity: 0.7;
+$site-title-color: white;
+$site-title-hover-color: #DAA520;
+$site-description-color: white;
+$site-description-size: 2.4rem;
+$site-description-size-mobile: 2.1rem;
+$site-description-font-style: italic;
+
+header#masthead {
+    background: $header-background-color;
+    .site-branding {
+        min-height: $header-min-height;
+        display: flex;
+        align-items: center;
+        -webkit-align-items: center;
+    }
+
+    .header-image {
+        img {
+            max-width: $header-width;
+            display: block;
+            margin: 0 auto;
+            min-height: $header-min-height;
+        }
+    }
+
+    h1.site-title {      
+        margin: 0;
+        a {
+            font-size: $site-title-size;
+            color: $site-title-color;
+            opacity: $site-title-opacity;
+        }
+        a:hover {
+            color: $site-title-hover-color;
+        }
+    }
+
+    .site-title-holder p.site-description { 
+         font-size: $site-description-size;
+         color: $site-description-color;
+         font-style: $site-description-font-style;
+    }
+    
+    @media screen and (max-width: 40em) {
+    .button, p a.button {
+            margin: 1rem auto;
+        }
+        h1.site-title, .site-title-holder, h2.section-title, h2, h3.services-title, p {
+            text-align: center;
+        }
+        h1.site-title a {
+            font-size: $site-title-size-mobile;
+        }
+         .site-title-holder p.site-description { 
+            font-size: $site-description-size-mobile;
+        }
+    
+    }
+
+}
+

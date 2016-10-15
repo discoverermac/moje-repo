@@ -1,0 +1,28 @@
+/*
+Footer Styles
+*/
+$footer-max-width: 100%;
+$footer-min-height: 60px;
+$footer-background: #000;
+$footer-color: #ccc;
+$footer-hovor-color: #DAA520;
+
+#colophon {
+    display: block;
+    margin: 0 auto;
+    clear: both;
+    .site-info {
+        background: $footer-background;
+        max-width: $footer-max-width;
+        min-height:  $footer-min-height;
+        margin: 0 auto;
+        text-align: center;
+        line-height: $footer-min-height;
+    }
+    a {
+        color: $footer-color;
+    }
+    a:hover {
+        color: $footer-hovor-color;
+    }
+}
